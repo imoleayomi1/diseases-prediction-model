@@ -30,7 +30,7 @@ st.title('Prediction of Common Disease using Machine Learning Technique')
 st.caption("Developed by Oyebiyi Iyanuoluwa Elizabeth | Matric No: 2023000798")
 
 # getting the input data from the user
-st.subheader(" N.B: Check all symptoms that apply. Leaving unchecked means you do not have the symptom. Leaving all boxes unchecked can lead to incorrect predictions.")
+st.subheader(" N.B: Check all symptoms that apply. Leaving all boxes unchecked means you don’t have any symptoms, but doing so may lead to inaccurate predictions.")
 # st.subheader ("N.B:Leaving all boxes unchecked can lead to incorrect predictions.")
 dehydration = 1 if st.checkbox('Dehydration') else 0
 vomiting = 1 if st.checkbox('Vomiting') else 0
