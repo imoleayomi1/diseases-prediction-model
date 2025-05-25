@@ -81,5 +81,5 @@ if st.button('Disease'):
         else:
           commondiseasediagnosis = "**Tuberculosis:** Your symptoms **likely indicate** Tuberculosis. Early treatment is recommended to prevent complications. Monitor your health and consult a doctor if symptoms persist."
 
-st.success(malariadiagnosis)
+st.success(commondiseasediagnosis)
 
