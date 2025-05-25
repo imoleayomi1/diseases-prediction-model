@@ -52,3 +52,34 @@ bloating = 1 if st.checkbox('bloating') else 0
 weightloss = 1 if st.checkbox('weightloss') else 0
 abdominalpaindiscomfort = 1 if st.checkbox('Abdominal pain/ discomfort') else 0
 chillssweating = 1 if st.checkbox('chills/ sweating?') else 0 
+
+
+# code for Prediction
+commondiseasediagnosis = ''
+
+# creating a button for Prediction
+
+if st.button('Disease'):
+
+        inputdata = [dehydration,vomiting,legcramps,rapidheartrate,rapidheartrate,drymouthskin,coughsorethroat,bloodcoughing,chestpain,fatigueweakness,fever,lossofappetite,shortnessofbreath,skinrash,headachebodyache,sneezingrunnynose,burningstomach,chestbackpain,bloating,weightloss,abdominalpaindiscomfort,chillssweating]
+        inputdata = [float(x) for x in inputdata]
+
+
+        prediction = diseaseeamodel.predict([inputdata])
+
+        st.caption('Result:')
+        if prediction[0] == 0:
+          commondiseasediagnosis = "**CHOLERA:** there is **possibility** that you have CHOLERA. However, It is advisable to seek **urgent** medical attention for proper diagnosis and treatment."
+        elif prediction[0] == 1:
+          commondiseasediagnosis = "**Common Cold:** There is a **high probability** that you have common cold. It is advisable to seek **urgent** medical attention for proper diagnosis and treatment."
+        elif prediction[0] ==2:
+          commondiseasediagnosis = "**Malaria/Typhoid:** Your symptoms **likely indicate** Malaria/Typhoid. Early treatment is recommended to prevent complications. Monitor your health and consult a doctor if symptoms persist."
+        elif prediction[0] ==3: 
+          commondiseasediagnosis = "**Measles/Chickenpox:** Your symptoms **likely indicate** Measles/Chicken pox. Early treatment is recommended to prevent complications. Monitor your health and consult a doctor if symptoms persist."
+        elif prediction[0] ==4:
+          commondiseasediagnosis = "**Peptic Ulcer Disease:** Your symptoms **likely indicate** Peptic Ulcer Disease. Early treatment is recommended to prevent complications. Monitor your health and consult a doctor if symptoms persist."
+        else:
+          commondiseasediagnosis = "**Tuberculosis:** Your symptoms **likely indicate** Tuberculosis. Early treatment is recommended to prevent complications. Monitor your health and consult a doctor if symptoms persist."
+
+st.success(malariadiagnosis)
+
