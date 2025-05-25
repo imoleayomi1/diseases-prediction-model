@@ -65,7 +65,7 @@ if st.button('Disease'):
         inputdata = [float(x) for x in inputdata]
 
 
-        prediction = diseaseeamodel.predict([inputdata])
+        prediction = diseasemodel.predict([inputdata])
 
         st.caption('Result:')
         if prediction[0] == 0:
