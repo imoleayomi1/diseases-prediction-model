@@ -2,7 +2,7 @@ import os
 import pickle
 import streamlit as st
 import numpy as np
-from streamlit_option_menu import option_menu
+# from streamlit_option_menu import option_menu
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
