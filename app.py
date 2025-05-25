@@ -5,9 +5,9 @@ import numpy as np
 # from streamlit_option_menu import option_menu
 import numpy as np
 import pandas as pd
-# from sklearn.preprocessing import StandardScaler
-# scaler = StandardScaler()
-# from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+scaler = StandardScaler()
+from sklearn.model_selection import train_test_split
 from sklearn import svm
 from sklearn.metrics import accuracy_score
 
