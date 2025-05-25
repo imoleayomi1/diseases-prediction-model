@@ -46,8 +46,8 @@ shortnessofbreath = 1 if st.checkbox('Shortness of breath') else 0
 skinrash = 1 if st.checkbox('Skin rash') else 0
 headachebodyache = 1 if st.checkbox('headache/ bodyache') else 0
 sneezingrunnynose = 1 if st.checkbox('Sneezing/ runnynose') else 0
-burningstomach = 1 if st.checkbox('burning stomach') else 0 
-chestbackpain = 1 if st.checkbox('chest/ backpain') else 0
+burningstomachchestbackpain = 1 if st.checkbox('burning stomach, chest or backpain') else 0 
+# chestbackpain = 1 if st.checkbox('chest/ backpain') else 0
 bloating = 1 if st.checkbox('bloating') else 0
 weightloss = 1 if st.checkbox('weightloss') else 0
 abdominalpaindiscomfort = 1 if st.checkbox('Abdominal pain/ discomfort') else 0
@@ -61,7 +61,7 @@ commondiseasediagnosis = ''
 
 if st.button('Disease'):
 
-        inputdata = [dehydration,vomiting,legcramps,rapidheartrate,rapidheartrate,drymouthskin,coughsorethroat,bloodcoughing,chestpain,fatigueweakness,fever,lossofappetite,shortnessofbreath,skinrash,headachebodyache,sneezingrunnynose,burningstomach,chestbackpain,bloating,weightloss,abdominalpaindiscomfort,chillssweating]
+        inputdata = [dehydration,vomiting,legcramps,rapidheartrate,rapidheartrate,drymouthskin,coughsorethroat,bloodcoughing,chestpain,fatigueweakness,fever,lossofappetite,shortnessofbreath,skinrash,headachebodyache,sneezingrunnynose,burningstomachchestbackpain,bloating,weightloss,abdominalpaindiscomfort,chillssweating]
         inputdata = [float(x) for x in inputdata]
 
 
