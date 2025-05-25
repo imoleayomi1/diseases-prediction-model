@@ -32,15 +32,3 @@ st.caption("Developed by Oyebiyi Iyanuoluwa Elizabeth | Matric No: 2023000798")
 # getting the input data from the user
 st.subheader("Check all symptoms that apply. Leaving unchecked means you do not have the symptom.")
 fever = 1 if st.checkbox('Fever?') else 0
-
-
-
-
-
-
-
-
-
-
-
-st.success(malariadiagnosis)
